@@ -55,22 +55,22 @@
         <h3 class="account-title">Creá tu cuenta</h3>
         <form class="register-login" action="/" method="get">
             <label for="name">
-            <input type="text" minlength="2" id="name" name="name" placeholder="Nombre y apellido">
+            <input type="text" minlength="2" id="name" name="name" placeholder="Nombre y apellido" required>
             </label>
             <label for="username">
-            <input type="text" id="username" name="username" placeholder="Nombre de usuario">
+            <input type="text" id="username" name="username" placeholder="Nombre de usuario" required>
             </label>
             <label for="birthday">Fecha de nacimiento:</label>
-            <input type="date" id="birthday" name="birthday">
+            <input type="date" id="birthday" name="birthday" required>
             <label for="address">
-                <input type="text" id="address" name="address" placeholder="Domicilio">
+                <input type="text" id="address" name="address" placeholder="Domicilio" required>
             </label>
             <label>Tipo de usuario:</label>
             <label for="buyer">
-            <input type="radio" id="buyer" name="user-type" value="buyer">
+            <input type="radio" id="buyer" name="user-type" value="buyer" required>
             Comprador</label>
             <label for="seller">
-            <input type="radio" id="seller" name="user-type" value="seller">
+            <input type="radio" id="seller" name="user-type" value="seller" required>
             Vendedor</label>
             <label>Tipo de categoría:</label>
             <label for="electro">
@@ -82,7 +82,7 @@
             <label for="home">
             <input type="checkbox" id="home" name="home" value="home">
             Home</label>
-            <label for="toy-store">
+            <label for="toy-store" required>
             <input type="checkbox" id="toy-store" name="toy-store" value="toy-store">
             Juguetería</label>
             <label for="healthy-lifestyle">
@@ -90,8 +90,8 @@
             Vida sana</label>
             <label for="user-image">Foto de usuario:</label>
             <input type="file" id="user-image" name="user-image" accept="image/*">
-            <input type="password" id="password" name="password" placeholder="Contraseña">
-            <input type="password" id="password" name="password" placeholder="Confirmar contraseña">
+            <input type="password" minlength="2" id="password" name="password" placeholder="Contraseña" required>
+            <input type="password" minlength="2" id="password" name="password" placeholder="Confirmar contraseña" required>
             <button type="submit" id="submit">Enviar</button>
             <button type="reset">Reset</button>
         </form>
