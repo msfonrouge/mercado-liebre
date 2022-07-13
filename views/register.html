@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Bienvenidos a MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" />
+            </div>
+            <form class="search" action="#" method="GET">
+                <input type="text" class="search-input" placeholder="Buscar productos, marcas y más"></input>
+                <i class="fa fa-search"></i>
+            </form>
+            <p>
+                <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+                de crédito
+            </p>
+        </div>
+        <nav>
+            <ul class="first-menu">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="second-menu">
+                <li>
+                    <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a>
+                </li>
+                <li>
+                    <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+                </li>
+                <li>
+                    <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </header>
+    <section class="banner">
+        <img src="images/img-home-banner.jpg" alt="Banner de ofertas" />
+    </section>
+    <main>
+        <h3 class="account-title">Creá tu cuenta</h3>
+        <form class="register-login" action="/" method="get">
+            <label for="name">
+            <input type="text" minlength="2" id="name" name="name" placeholder="Nombre y apellido">
+            </label>
+            <label for="username">
+            <input type="text" id="username" name="username" placeholder="Nombre de usuario">
+            </label>
+            <label for="birthday">Fecha de nacimiento:</label>
+            <input type="date" id="birthday" name="birthday">
+            <label for="address">
+                <input type="text" id="address" name="address" placeholder="Domicilio">
+            </label>
+            <label>Tipo de usuario:</label>
+            <label for="buyer">
+            <input type="radio" id="buyer" name="user-type" value="buyer">
+            Comprador</label>
+            <label for="seller">
+            <input type="radio" id="seller" name="user-type" value="seller">
+            Vendedor</label>
+            <label>Tipo de categoría:</label>
+            <label for="electro">
+            <input type="checkbox" id="electro" name="electro" value="electro">
+            Electro</label>
+            <label for="fashion">
+            <input type="checkbox" id="fashion" name="fashion" value="fashion">
+            Moda</label>
+            <label for="home">
+            <input type="checkbox" id="home" name="home" value="home">
+            Home</label>
+            <label for="toy-store">
+            <input type="checkbox" id="toy-store" name="toy-store" value="toy-store">
+            Juguetería</label>
+            <label for="healthy-lifestyle">
+            <input type="checkbox" id="healthy-lifestyle" name="healthy-lifestyle" value="healthy-lifestyle">
+            Vida sana</label>
+            <label for="user-image">Foto de usuario:</label>
+            <input type="file" id="user-image" name="user-image" accept="image/*">
+            <input type="password" id="password" name="password" placeholder="Contraseña">
+            <input type="password" id="password" name="password" placeholder="Confirmar contraseña">
+            <button type="submit" id="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+    <footer>
+        <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
+</body>
+
+</html>
