@@ -20,7 +20,7 @@ p {
 /* Home y general*/
 
 div.top-header {
-    padding: 5%;
+    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -30,7 +30,8 @@ header {
     background-color: #EAC926;
 }
 
-header div.logo, .search {
+header div.logo,
+.search {
     width: 50%;
 }
 
@@ -60,7 +61,8 @@ header nav {
     justify-content: space-between;
 }
 
-header .first-menu, header .second-menu {
+header .first-menu,
+header .second-menu {
     display: flex;
     padding: 10px;
 }
@@ -81,7 +83,7 @@ header .search .search-input {
     outline: none;
     color: #666;
     border-radius: 5px;
-}   
+}
 
 header div.top-header p {
     width: 100%;
@@ -187,7 +189,8 @@ main section article i,
     color: #39b54a;
 }
 
-.features, footer {
+.features,
+footer {
     background-color: #FFF;
 }
 
@@ -222,11 +225,17 @@ main section article i,
     flex-direction: column;
 }
 
-.register-login label, .register-login input, .register-login button {
+.register-login label,
+.register-login input,
+.register-login button {
     margin: 5px 0;
 }
 
-input[type="text"], input[type="date"], input[type="password"], input[type="button"], button {
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="button"],
+button {
     padding: 10px;
     width: 100%;
     height: 50px;
@@ -276,9 +285,9 @@ input[type="text"], input[type="date"], input[type="password"], input[type="butt
         margin: 20px;
     }
 
-        header .search input[type="text"] {
-            height: 18px;
-        }
+    header .search input[type="text"] {
+        height: 18px;
+    }
 
     header div.logo,
     .search,
@@ -290,12 +299,12 @@ input[type="text"], input[type="date"], input[type="password"], input[type="butt
         display: none;
     }
 
-        header .search i {
-            position: static;
-            background-color: #FFF;
-            border: 1px solid #000;
-            margin: 7px;
-        }
+    header .search i {
+        position: static;
+        background-color: #FFF;
+        border: 1px solid #000;
+        margin: 7px;
+    }
 
 }
 
@@ -304,21 +313,18 @@ input[type="text"], input[type="date"], input[type="password"], input[type="butt
         flex-direction: row;
         flex-wrap: nowrap;
     }
-    
+
     form.register-login {
-            width: 50%;
-            margin: auto;
-        }
+        width: 50%;
+        margin: auto;
+    }
 
     .features {
         display: flex;
     }
 
-        .features article {
-            padding: 40px;
-        }
+    .features article {
+        padding: 40px;
+    }
 
 }
-
-
-
